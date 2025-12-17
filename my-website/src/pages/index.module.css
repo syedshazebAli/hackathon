@@ -1,0 +1,27 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroMinimal {
+  padding: 1.75rem 0 1.25rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--bg);
+}
+.title {
+  font-size: 1.75rem;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.25rem;
+}
+.subtitle {
+  color: var(--text-muted);
+  margin: 0 0 0.75rem;
+}
+.quicklinks {
+  display: flex;
+  gap: 8px;
+}
+
+@media screen and (max-width: 996px) {
+  .heroMinimal { padding: 1.25rem 0 0.75rem; }
+}

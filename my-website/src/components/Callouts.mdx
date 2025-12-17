@@ -1,0 +1,15 @@
+import Admonition from '@theme/Admonition';
+
+export const Insight = ({title = 'Insight', children}) => (
+  <Admonition type="tip" title={`💡 ${title}`}>{children}</Admonition>
+);
+
+export const Engineering = ({title = 'Engineering Note', children}) => (
+  <Admonition type="info" title={`⚙️ ${title}`}>{children}</Admonition>
+);
+
+export const AILogic = ({title = 'AI Logic', children}) => (
+  <Admonition type="note" title={`🧠 ${title}`}>{children}</Admonition>
+);
+
+export const Divider = () => <hr className="hr" />;
